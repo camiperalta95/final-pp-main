@@ -1,0 +1,154 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    width: 99vw;
+    align-items: center;
+    margin: 0px 5px;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    border: none;
+    padding: 1rem;
+    font-family: 'sail';
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+nav a:hover {
+    color: var(--amarillo);
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+.botones, .botones-lista, .titulo {
+    display: inline-flex;
+    flex-direction: row;
+    gap: 40px;
+    list-style-type: none;
+    text-align: center;
+}
+
+.titulo {
+    background-image: url(../img/pngwing.com.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'sail';
+    color: black;
+}
+
+.numero {
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+}
+
+.imagen-tel {
+    filter: brightness(0) saturate(100%) invert(46%) sepia(59%) saturate(541%) hue-rotate(77deg) brightness(96%);
+}
+
+
+.dudas {
+    display: inline-block;
+    font-family: 'bungee';
+    margin: 20px;
+}
+
+.dudas1 {
+    color: var(--blanco-verde);
+}
+
+.donacion {
+    background-color: var(--verde-claro);
+    border: none;
+    padding: 1rem;
+    margin: 1rem;
+    color: white;
+    font-weight: bold;
+    font-size: medium;
+    font-family: "bungee", serif;
+    cursor: pointer;
+}
+
+.donacion:hover {
+    background-color: var(--amarillo);
+}
+
+@media (max-width: 600px) {
+    .dudas {
+        font-size: smaller;
+        margin: 0;
+        margin-top: 10px;
+        margin-left: 15px;
+    }
+
+    .dudas2 {
+        margin-left: 7px;
+    }
+
+    .numero {
+        display: grid;
+    }
+
+    .numero img {
+        width: 35px;
+        margin-left: 45px;
+    }
+
+    .donacion {
+        font-size: small;
+        width: 150px;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+
+    }
+    
+    nav a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .botones-lista {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .botones-lista {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 30px;
+    }
+
+    nav a {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 700px){
+    .botones-lista {
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+}
